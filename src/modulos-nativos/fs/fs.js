@@ -37,3 +37,12 @@ fs.readFile('archivo.txt', 'utf8', (err, data) => {
   } catch (err) {
     console.error(err);
   }
+
+//   mkdir
+fs.mkdir('nuevoDirectorio', (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Directorio creado exitosamente.');
+});
