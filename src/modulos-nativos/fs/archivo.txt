@@ -1,1 +1,1 @@
-Hola mundo, desde Node.js!
+Este es otro contenido que quiero escribir en el archivo.
