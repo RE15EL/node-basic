@@ -46,3 +46,35 @@ fs.mkdir('nuevoDirectorio', (err) => {
   }
   console.log('Directorio creado exitosamente.');
 });
+
+
+// readdir
+fs.readdir('.', (err, files) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Contenido del directorio >>');
+  files.forEach(file => {
+    console.log(file);
+  });
+});
+
+//unlink
+fs.unlink('text.txt', (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Archivo eliminado exitosamente.');
+});
+
+// rmdir
+fs.rmdir('./nuevoDirectorio', (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('Directorio eliminado exitosamente.');
+});
+
